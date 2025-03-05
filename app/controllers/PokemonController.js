@@ -1,0 +1,19 @@
+import { pokemonService } from "../services/PokemonService.js";
+import { Pop } from "../utils/Pop.js";
+
+export class PokemonController {
+  constructor() {
+    console.log('Pokemon controller is loaded');
+    this.getPokemon()
+  }
+
+
+  async getPokemon() {
+    try {
+      await pokemonService.getPokemon()
+    } catch (error) {
+      console.error('Could not get Pokemon', error)
+      Pop.error(error, 'Could not get Pokemon')
+    }
+  }
+}
