@@ -9,7 +9,7 @@ export class Pokemon {
     return `
   <div>
     <button class="btn btn-cyan mb-2 w-100" title="see details about pokemon" type="button">
-      Pokemon
+      ${this.name}
     </button>
   </div>
   `
