@@ -12,6 +12,27 @@ export class SBXPokemon {
     this.creatorId = data.creatorId
   }
 
-
+  get activetemplate() {
+    return `
+    <div class="bg-light shadow-md p-3 d-flex flex-column">
+      <img class="pokemon-img"
+        src="${this.img}"
+        alt="img of ${this.name}">
+      <h1>${this.name}</h1>
+      <hr>
+      <div>
+        <span>${this.weight}</span>
+        <span>${this.height}</span>
+        <span>${this.health}</span>
+      </div>
+      <hr>
+      <div>
+        <span>${this.attack}</span>
+        <span>${this.defense}</span>
+        <span>${this.speed}</span>
+      </div>
+    </div>
+    `
+  }
 
 }

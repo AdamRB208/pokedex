@@ -4,8 +4,8 @@ import { Pop } from "../utils/Pop.js";
 
 export class SBXPokemonController {
   constructor() {
-    console.log('SBX Controller loaded');
     AppState.on('identity', this.getSBXPokemon)
+    console.log('SBX Controller loaded');
     // this.getSBXPokemon()
   }
 

@@ -6,6 +6,7 @@ import { Pop } from "../utils/Pop.js";
 export class PokemonController {
   constructor() {
     AppState.on('Pokemon', this.drawPokemon)
+    AppState.on('identity', this.drawPokemon)
     this.getPokemon()
   }
 
@@ -27,8 +28,8 @@ export class PokemonController {
     }
   }
 
-  async getPokemonDetails() {
+  // async getPokemonDetails() {
 
-  }
+  // }
 
 }
