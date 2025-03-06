@@ -1,4 +1,5 @@
 import { AppState } from "../AppState.js";
+import { Pokemon } from "../models/Pokemon.js";
 import { pokemonService } from "../services/PokemonService.js";
 import { Pop } from "../utils/Pop.js";
 
@@ -25,4 +26,9 @@ export class PokemonController {
       Pop.error(error, 'Could not get Pokemon')
     }
   }
+
+  async getPokemonDetails() {
+
+  }
+
 }
