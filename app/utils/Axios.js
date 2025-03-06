@@ -5,7 +5,7 @@ import { logger } from '../utils/Logger.js';
 // eslint-disable-next-line no-undef
 export const api = axios.create({
   baseURL: baseURL,
-  timeout: 8000,
+  timeout: 4000,
   withCredentials: true
 })
 

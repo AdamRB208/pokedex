@@ -1,5 +1,4 @@
 import { AppState } from "../AppState.js"
-import { baseURL } from "../env.js"
 import { SBXPokemon } from "../models/SBXPokemon.js"
 import { api } from "../utils/Axios.js"
 

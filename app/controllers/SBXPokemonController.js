@@ -6,7 +6,7 @@ export class SBXPokemonController {
   constructor() {
     console.log('SBX Controller loaded');
     AppState.on('identity', this.getSBXPokemon)
-    this.getSBXPokemon()
+    // this.getSBXPokemon()
   }
 
   async getSBXPokemon() {
@@ -19,6 +19,6 @@ export class SBXPokemonController {
   }
 }
 
-
+// NOTE start with drawing pokemon and get observer for login, check network for order. 
 
 
